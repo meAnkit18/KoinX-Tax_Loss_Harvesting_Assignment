@@ -1,0 +1,80 @@
+.header {
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: baseline;
+  font-size: 28px;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+}
+
+.logo-koin {
+  color: #1a1a2e;
+}
+
+.logo-x {
+  color: #f7931a;
+  font-weight: 800;
+}
+
+.logo-reg {
+  color: #1a1a2e;
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 1px;
+}
+
+.header-nav-desktop {
+  display: flex;
+  gap: 24px;
+}
+
+.header-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.header-hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #1a1a2e;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 16px;
+  }
+
+  .header-hamburger {
+    display: flex;
+  }
+
+  .header-nav-desktop {
+    display: none;
+  }
+}

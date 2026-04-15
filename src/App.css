@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+.app {
+  min-height: 100vh;
+  background: #f5f7fa;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.main {
+  padding: 32px 24px 64px;
+}
+
+.main__container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.main__header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.main__title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.main__how-it-works-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.main__how-it-works {
+  font-size: 14px;
+  color: #0052FE;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.main__how-it-works:hover {
+  text-decoration: none;
+}
+
+.main__tooltip {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1a1a2e;
+  color: #e5e7eb;
+  padding: 14px 18px;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.6;
+  width: 320px;
+  z-index: 50;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.main__tooltip::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 12px;
+  height: 12px;
+  background: #1a1a2e;
+}
+
+.main__tooltip p {
+  margin: 0;
+}
+
+.main__tooltip a {
+  color: #60a5fa;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.main__how-it-works-wrapper:hover .main__tooltip {
+  display: block;
+}
+
+.cg-cards {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  gap: 16px;
+}
+
+.error-text {
+  color: #dc2626;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.error-retry {
+  padding: 10px 20px;
+  background: #0052FE;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.error-retry:hover {
+  background: #003ecb;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 20px 16px 48px;
+  }
+
+  .main__title {
+    font-size: 22px;
+  }
+
+  .cg-cards {
+    flex-direction: column;
+    gap: 16px;
+  }
+}

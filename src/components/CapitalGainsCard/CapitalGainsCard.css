@@ -1,0 +1,137 @@
+.cg-card {
+  border-radius: 12px;
+  padding: 24px;
+  flex: 1;
+  min-width: 0;
+}
+
+.cg-card--pre {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+}
+
+.cg-card--after {
+  background: linear-gradient(135deg, #0052FE 0%, #003ecb 100%);
+  color: #fff;
+}
+
+.cg-card__title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+
+.cg-card--pre .cg-card__title {
+  color: #1a1a2e;
+}
+
+.cg-card__table {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.cg-card__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  font-size: 14px;
+}
+
+.cg-card--after .cg-card__row {
+  border-bottom-color: rgba(255, 255, 255, 0.15);
+}
+
+.cg-card__row--header {
+  font-weight: 600;
+  font-size: 13px;
+  padding-bottom: 8px;
+}
+
+.cg-card--pre .cg-card__row--header span {
+  color: #6b7280;
+}
+
+.cg-card--after .cg-card__row--header span {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.cg-card__row span:first-child {
+  font-weight: 500;
+}
+
+.cg-card__row span:not(:first-child) {
+  text-align: right;
+}
+
+.cg-card__row--net {
+  border-bottom: none;
+  font-weight: 600;
+}
+
+.cg-card--pre .cg-card__row span:first-child {
+  color: #374151;
+}
+
+.cg-card__total {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 2px solid rgba(0, 0, 0, 0.08);
+}
+
+.cg-card--after .cg-card__total {
+  border-top-color: rgba(255, 255, 255, 0.2);
+}
+
+.cg-card__total-label {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.cg-card--pre .cg-card__total-label {
+  color: #1a1a2e;
+}
+
+.cg-card__total-value {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.cg-card--pre .cg-card__total-value {
+  color: #1a1a2e;
+}
+
+.cg-card__savings {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.cg-card__savings-emoji {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .cg-card {
+    padding: 18px;
+  }
+
+  .cg-card__total {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .cg-card__total-value {
+    font-size: 20px;
+  }
+}

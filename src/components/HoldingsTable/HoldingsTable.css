@@ -1,0 +1,297 @@
+.holdings {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.holdings__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a2e;
+  padding: 20px 24px 0;
+  margin: 0;
+}
+
+.holdings__table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.holdings__table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.holdings__th {
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  padding: 16px 16px 12px;
+  text-align: left;
+  white-space: nowrap;
+  border-bottom: 1px solid #e5e7eb;
+  background: #fafbfc;
+}
+
+.holdings__th:first-child {
+  padding-left: 24px;
+}
+
+.holdings__th:last-child {
+  padding-right: 24px;
+}
+
+.holdings__th--right {
+  text-align: right;
+}
+
+.holdings__th--check {
+  width: 48px;
+}
+
+.holdings__th-sub {
+  font-size: 11px;
+  font-weight: 400;
+  color: #9ca3af;
+  margin-top: 2px;
+}
+
+.holdings__th--sortable {
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.15s ease;
+}
+
+.holdings__th--sortable:hover {
+  background: #f0f2f5;
+}
+
+.holdings__sort-icon {
+  margin-left: 4px;
+  font-size: 12px;
+  color: #c4c8cf;
+  transition: color 0.15s ease;
+}
+
+.holdings__sort-icon.active {
+  color: #0052FE;
+}
+
+.holdings__th--disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.holdings__th--disabled:hover {
+  background: #fafbfc;
+}
+
+/* Custom checkbox */
+.holdings__checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.holdings__checkbox-label input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+}
+
+.holdings__checkbox-custom {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #d1d5db;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+  background: #fff;
+  flex-shrink: 0;
+}
+
+.holdings__checkbox-label input:checked + .holdings__checkbox-custom {
+  background: #0052FE;
+  border-color: #0052FE;
+}
+
+.holdings__checkbox-label input:checked + .holdings__checkbox-custom::after {
+  content: '';
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  margin-top: -2px;
+}
+
+.holdings__checkbox-label input:indeterminate + .holdings__checkbox-custom {
+  background: #0052FE;
+  border-color: #0052FE;
+}
+
+.holdings__checkbox-label input:indeterminate + .holdings__checkbox-custom::after {
+  content: '';
+  width: 10px;
+  height: 0;
+  border: solid #fff;
+  border-width: 0 0 2px 0;
+}
+
+/* Row */
+.holdings__row {
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.holdings__row:hover {
+  background: #f0f4ff;
+}
+
+.holdings__row--selected {
+  background: #eff4ff;
+}
+
+.holdings__row--selected:hover {
+  background: #e4ebff;
+}
+
+.holdings__td {
+  padding: 14px 16px;
+  font-size: 14px;
+  color: #374151;
+  border-bottom: 1px solid #f3f4f6;
+  vertical-align: middle;
+}
+
+.holdings__td:first-child {
+  padding-left: 24px;
+}
+
+.holdings__td:last-child {
+  padding-right: 24px;
+}
+
+.holdings__td--right {
+  text-align: right;
+}
+
+.holdings__td--asset {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.holdings__coin-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #f3f4f6;
+  flex-shrink: 0;
+}
+
+.holdings__coin-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.holdings__coin-name {
+  font-weight: 600;
+  color: #1a1a2e;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.holdings__coin-symbol {
+  font-size: 12px;
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+.holdings__holding-value {
+  font-weight: 500;
+}
+
+.holdings__holding-sub {
+  font-size: 12px;
+  color: #9ca3af;
+  margin-top: 2px;
+}
+
+.holdings__balance-sub {
+  font-size: 11px;
+  color: #9ca3af;
+  margin-top: 2px;
+}
+
+.gain-positive {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.gain-negative {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.holdings__sell-value {
+  font-weight: 600;
+  color: #0052FE;
+}
+
+.holdings__sell-dash {
+  color: #9ca3af;
+}
+
+.holdings__view-all {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background: none;
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  color: #0052FE;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+  font-family: inherit;
+}
+
+.holdings__view-all:hover {
+  background: #f0f4ff;
+}
+
+@media (max-width: 768px) {
+  .holdings__title {
+    padding: 16px 16px 0;
+    font-size: 16px;
+  }
+
+  .holdings__th:first-child,
+  .holdings__td:first-child {
+    padding-left: 16px;
+  }
+
+  .holdings__th:last-child,
+  .holdings__td:last-child {
+    padding-right: 16px;
+  }
+
+  .holdings__coin-name {
+    max-width: 120px;
+  }
+}
