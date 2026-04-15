@@ -3,12 +3,13 @@
 **Author:** Ankit Kumar
 
 A responsive React application that helps users visualize and optimize their crypto tax liabilities through tax loss harvesting.
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3687edad-6780-473b-9f42-1f47ad8f17bf" />
 
-![Tax Harvesting Screenshot](./screenshots/main-view.png)
+
 
 ## 🚀 Live Demo
 
-[Deployed Link](#) *(Update after deploying to Vercel/Netlify)*
+[Deployed Link](https://koin-x-tax-loss-harvesting-assignme.vercel.app/)
 
 ## ✨ Features
 
@@ -101,10 +102,12 @@ Savings: $700 - $200 = $500 → "You are going to save upto $500"
 ## 📱 Screenshots
 
 ### Desktop View
-![Desktop](./screenshots/main-view.png)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3687edad-6780-473b-9f42-1f47ad8f17bf" />
 
 ### Mobile View
 Responsive layout with stacked cards and horizontally scrollable table.
+<img width="720" height="1600" alt="demooo" src="https://github.com/user-attachments/assets/d7bd50ca-7177-4bc8-8acf-20bba1500969" />
+
 
 ## 🧩 Bonus Features Implemented
 
